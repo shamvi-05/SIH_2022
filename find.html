@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://celltrackingapps.com/wp-content/uploads/2021/01/google-maps.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Find your study buddy nearby you</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px"><br></span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">About Study Buddy</span></h5>
+    
+    <p>The website allows students to search for other students to study with. Users can register, log in, search for students using Google Maps and preference and message each other to schedule meetings.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i> Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.</i></p>
+      <p>― Pelé, Brazillian pro footballer</p>
+    </div>
+    <img src="https://media.istockphoto.com/photos/diverse-group-of-students-studying-at-library-picture-id619066144?b=1&k=20&m=619066144&s=170667a&w=0&h=C8VIYCO84zoW8bb7orXGmsSvMMIULY-VgvvvEE9E0Cc=" style="width:100%;max-width:1000px" class="w3-margin-top">
+    
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CHAT</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">WILLIAM</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">EMIR</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Hey I am Mark </h5>
+      <p class="w3-text-grey">Hey I am william</p><br>
+    
+      <h5>Nice to meet ya! what topics do you know?</h5>
+      <p class="w3-text-grey">I know thermodynamics</p><br>
+    
+      <h5>Let's study thermodynamics then!</h5>
+      <p class="w3-text-grey">Sure! When do you want to schedule the meeting?</p><br>
+    
+      <h5>Let's meet on 9th December</h5>
+      <p class="w3-text-grey">Sure we will study online</p><br>
+    
+      <h5>Goodbye!</h5>
+      <p class="w3-text-grey">Bye!</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+        <h5>Hey I am Mark </h5>
+        <p class="w3-text-grey">Hey I am Emir</p><br>
+      
+        <h5>Nice to meet ya! what topics do you know?</h5>
+        <p class="w3-text-grey">I know Linear Algebra</p><br>
+      
+        <h5>Let's study linear algebra then!</h5>
+        <p class="w3-text-grey">Sure! When do you want to schedule the meeting?</p><br>
+      
+        <h5>Let's meet on 10th December</h5>
+        <p class="w3-text-grey">Sure we will study online</p><br>
+      
+        <h5>Goodbye!</h5>
+        <p class="w3-text-grey">Bye!</p>
+    </div>  
+    <img src="https://media.gcflearnfree.org/content/560be4f6557fa909dc9cf5a1_09_30_2015/googletips_calendar2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Online Students Like you</span></h5>
+   
+    <div class="search-container">
+        <form>
+          <input type="text" placeholder="Search.." name="search">
+        </form>
+      </div>
+  
+      <div class="boxunder">
+        <div class="boxed">
+  
+          <p>Showing results for: Thermodynamics</p>
+  
+         
+            <div class="card">
+              <div class="flex-parent-element">
+               
+                <div class="flex-child-element-text"><div class="container">
+                  <h4><b>Shreya</b></h4>
+                  <p>Looking for: Thermodynamics</p>
+                  <p>Times Available: M&Th, 10AM-3PM</p>
+                </div></div>
+              </div>
+            </div>
+        
+  
+          
+            <div class="card">
+              <div class="flex-parent-element">
+                
+                <div class="flex-child-element-text"><div class="container">
+                  <h4><b>Koushiki</b></h4>
+                  <p>Looking for: Thermodynamics</p>
+                  <p>Times Available: M&Th, 10AM-3PM</p>
+                </div></div>
+              </div>
+            </div>
+          
+  
+         
+            <div class="card">
+              <div class="flex-parent-element">
+                
+                <div class="flex-child-element-text"><div class="container">
+                  <h4><b>Riya</b></h4>
+                  <p>Looking for: Thermodynamics</p>
+                  <p>Times Available: M&Th, 10AM-3PM</p>
+                </div></div>
+              </div>
+            </div>
+         
+        </div>
+      </div>
+
+<!-- End page content -->
+</div>
+
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
